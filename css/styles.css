@@ -167,7 +167,7 @@ nav h1 a {
   min-height: auto;
   min-width: 100%;
 }
-#restaurants-list li h1 {
+#restaurants-list li h2 {
 	padding: 0 20px;
   height: 25px;
   color: #406E8E;
@@ -315,10 +315,13 @@ nav h1 a {
 
 /* ====================== Media Queries ====================== */
 
-@media (min-width: 458px) {
+@media (max-width: 639px) {
   .filter-options {
     text-align: left;
   }
+	#breadcrumb {
+	 width: calc(100% - 80px);
+ }
 }
 
 @media (min-width: 640px) and (max-width: 929px){
@@ -328,6 +331,9 @@ nav h1 a {
   #restaurants-list li h1 {
     height: 35px;
   }
+	#breadcrumb {
+	 width: calc(100% - 80px);
+ }
 }
 
 @media (min-width: 930px) {
